@@ -1,0 +1,44 @@
+/* V9: self-contained Scientific Methods exhibit redesign. Other sections unchanged. */
+#methods .method-gallery{display:block;max-width:1180px;margin:0 auto}
+#methods .methods-lab-intro{position:relative;display:flex;align-items:center;justify-content:space-between;gap:28px;padding:28px 32px;border:1px solid #355778;border-radius:22px 22px 0 0;background:radial-gradient(circle at 85% 0%,#23445d 0%,transparent 44%),linear-gradient(125deg,#10223c,#172c48);overflow:hidden}
+#methods .methods-live,#methods .methods-eyebrow{font-size:.72rem;letter-spacing:.15em;font-weight:800;color:#81e7dd}
+#methods .methods-pulse{display:inline-block;width:7px;height:7px;border-radius:50%;background:#81e7dd;margin-right:8px;box-shadow:0 0 12px #81e7dd}
+#methods .methods-lab-intro h3{font-size:clamp(1.4rem,2.8vw,2.25rem);line-height:1.18;margin:12px 0;color:#f1f8ff}
+#methods .methods-lab-intro h3 em{font-style:normal;color:#83dce4}
+#methods .methods-lab-intro p{color:#c0d1e4;max-width:660px;line-height:1.65;margin:0}
+#methods .methods-lab-mark{font-size:5rem;line-height:1;color:#83e2e4;opacity:.55;text-align:center;min-width:160px}
+#methods .methods-lab-mark span{display:block;font-size:.65rem;letter-spacing:.3em;margin-top:10px;color:#bed9e8}
+#methods .methods-pathway{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;background:#0e1d34;border:1px solid #355778;border-top:0}
+#methods .methods-step{appearance:none;border:0;border-right:1px solid #314765;border-bottom:3px solid transparent;background:transparent;color:#c9d8e8;cursor:pointer;text-align:left;padding:20px 17px;min-width:0;display:flex;flex-direction:column;gap:8px;transition:background .2s,border-color .2s,transform .2s;position:relative}
+#methods .methods-step:last-child{border-right:0}
+#methods .methods-step:hover,#methods .methods-step:focus-visible{background:#1a3552;outline-offset:-3px}
+#methods .methods-step.is-active{background:#1b3955;border-bottom-color:#70e3d4;color:#fff}
+#methods .methods-step-num{font-size:.73rem;color:#86d7e2;font-weight:800;letter-spacing:.12em}
+#methods .methods-step-icon{font-size:2.1rem;color:#91dce9;line-height:1.2}
+#methods .methods-step-title{font-size:.77rem;font-weight:800;letter-spacing:.06em;line-height:1.4}
+#methods .methods-step-arrow{position:absolute;right:13px;top:16px;color:#7fdccf}
+#methods .methods-spotlight{border:1px solid #355778;border-top:0;border-radius:0 0 22px 22px;overflow:hidden;background:#142239}
+#methods .methods-feature{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.15fr);gap:0}
+#methods .methods-feature-visual{min-height:420px;position:relative;background:radial-gradient(circle at 50% 40%,#245c6c,#0e2037 65%);overflow:hidden}
+#methods .methods-visual-glow{position:absolute;inset:12%;border:1px solid #ffffff26;border-radius:50%;box-shadow:0 0 0 35px #ffffff05,0 0 0 75px #ffffff04;pointer-events:none}
+#methods .methods-feature-image{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#a7d2de;text-align:center;padding:30px}
+#methods .methods-feature-image img{width:100%;height:100%;object-fit:cover;filter:saturate(.8) contrast(1.04)}
+#methods .methods-image-label{position:absolute;bottom:20px;left:20px;right:20px;padding:12px 15px;border:1px solid #ffffff36;background:#0b1c31db;backdrop-filter:blur(8px);border-radius:10px;font-size:.73rem;font-weight:800;letter-spacing:.1em;color:#8fe5de}
+#methods .methods-image-label span{color:#d7e7f3}
+#methods .methods-feature-copy{padding:34px clamp(20px,3vw,44px)}
+#methods .methods-feature-copy h3{font-size:clamp(1.5rem,2.6vw,2.1rem);line-height:1.2;color:#f2f8ff;margin:12px 0 22px}
+#methods .methods-why{border-left:3px solid #76d9d6;padding:12px 17px;background:#203d4d;border-radius:0 12px 12px 0;margin-bottom:20px}
+#methods .methods-why>span{font-size:.68rem;letter-spacing:.15em;color:#89eee0;font-weight:800}
+#methods .methods-why p{margin:8px 0 0;color:#e2edf7!important;line-height:1.6}
+#methods .methods-detail{border-top:1px solid #38516b;padding:0 0 2px}
+#methods .methods-detail summary{cursor:pointer;list-style:none;padding:17px 0;display:flex;justify-content:space-between;gap:15px;font-weight:750;color:#f0f6ff}
+#methods .methods-detail summary::-webkit-details-marker{display:none}
+#methods .methods-detail summary span{color:#8be6d9;font-size:1.3rem;line-height:1;transition:transform .2s}
+#methods .methods-detail[open] summary span{transform:rotate(45deg)}
+#methods .methods-detail p{color:#c9d8e7!important;line-height:1.7;margin:0 0 18px}
+#methods .methods-actions{border-top:1px solid #38516b;margin-top:8px;padding-top:20px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+#methods .methods-actions a,#methods .methods-context a{color:#88e8de;text-decoration:none;font-weight:750}
+#methods .methods-actions span{font-size:.65rem;color:#93a9c0;letter-spacing:.1em}
+#methods .methods-context{margin:16px 0 0;color:#b6c7d9;line-height:1.65;font-size:.87rem}
+@media(max-width:760px){#methods .methods-lab-intro{padding:24px 20px}#methods .methods-lab-mark{display:none}#methods .methods-pathway{grid-template-columns:repeat(2,minmax(0,1fr))}#methods .methods-step:nth-child(2){border-right:0}#methods .methods-step:nth-child(-n+2){border-bottom:1px solid #314765}#methods .methods-step.is-active{box-shadow:inset 0 -3px #70e3d4}#methods .methods-feature{grid-template-columns:1fr}#methods .methods-feature-visual{min-height:260px}#methods .methods-feature-copy{padding:25px 20px}}
+@media(prefers-reduced-motion:reduce){#methods .methods-step,#methods .methods-detail summary span{transition:none}}
